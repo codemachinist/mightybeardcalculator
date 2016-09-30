@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url("body-bg.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+.modal {
+  background: #DECCA4;
+  text-align: center;
+  position: absolute;
+  height: 55vh;
+  width: 80vw;
+  top: 10vh;
+  left: 10vw;
+  font-size: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 0;
+}
+.modal h2 {
+  font-family: 'Lobster', cursive;
+  padding: 0 20px;
+}
+.modal input, button {
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.modal input {
+  height: 30px;
+  width: 540px;
+}
+button {
+  height: 40px;
+  width: 120px;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px;
+  margin-right: 0;
+  background-color: #87240F;
+  float: right;
+}
+button:hover {
+  background-color: rgba(135,36,15,.65);
+}
+.questions {
+  width: 540px;
+  margin: 0 auto;
+}
+.questions-responsive {
+  width: 60vw;
+  margin: 0 auto;
+}
+.id-wrapper {
+  justify-content: center;
+  display: flex;
+}
+#time {
+  position: absolute;
+  z-index: 98;
+  display: block;
+}
+#rate {
+  display: none;
+  position: relative;
+  z-index: 99;
+}
+#next {
+  margin-top: 40px;
+}
+#submit {
+  display: none;
+}
+#reload {
+  display: none;
+  width: auto;
+}
+.animation-wrapper {
+  background: #F8F3EA;
+  text-align: center;
+  position: absolute;
+  height: 90vh;
+  width: 50vw;
+  top: 5vh;
+  right: 6vw;
+  font-size: 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  outline: 1px solid #87240F;
+  outline-offset: -15px;
+  display: none;
+  opacity: 1;
+}
+@keyframes fadeIn {
+  0% {opacity: .2;}
+  100% {opacity: 1;}
+}
+.lengthdisplay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #333;
+  font-size: 28px;
+  text-align: left;
+}
+/*@media screen and (max-width: 760px) {
+  .questions {
+    display: none;
+  }
+  .questions-responsive {
+    display: block;
+  }
+  .modal input {
+    height: 30px;
+    width: 300px;
+  }
+  .modal input {
+    border: none;
+    font-size: 14px;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+}
+}
+@media screen and (min-width: 761px) {
+  .questions-responsive {
+    display: none;
+  }
+}*/

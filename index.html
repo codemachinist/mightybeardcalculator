@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://beardstencil.com/wp-content/uploads/2015/11/favicon.png">
+    <meta charset="utf-8">
+    <title>Mighty Beard Calculator</title>
+  </head>
+  <body>
+    <div class="modal" id="modal">
+          <h2>How Mighty Will Your Beard Be?</h2>
+          <div class="questions" id="questions">
+            <div class="id-wrapper">
+              <input id="time" type="input" placeholder="How many days will you spend growing your beard?"><br/>
+              <input id="rate" type="input" placeholder="How fast does that mangy mess grow (in mm per day)?">
+            </div>
+          <button type="submit" id="next" onclick="nextQuestion()">Next</button>
+            <button type="submit" name="name" value="" id="submit" onclick="beardify()">Beardify!</button>
+          </div>
+          <!-- <div class="questions-responsive" id="questions">
+            <div class="id-wrapper">
+              <input id="time" type="input" name="name" value="" placeholder="How many days will you grow your beard?"><br/>
+              <input id="rate" type="input" name="name" value="" placeholder="How fast does your beard grow (in mm/day)?">
+            </div>
+          <button type="submit" name="name" value="" id="next" onclick="nextQuestion()">Next</button>
+            <button type="submit" name="name" value="" id="submit" onclick="beardify()">Beardify!</button>
+          </div> -->
+    </div>
+      <div class="animation-wrapper" id="animation-wrapper">
+          <div class="lengthdisplay">
+                <p id="lengthdisplay">
+
+                </p>
+          </div>
+      </div>
+      <button type="submit" id="reload" onclick="reload()">Calculate New Beard</button>
+
+    <div class="counter-wrapper">
+
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
